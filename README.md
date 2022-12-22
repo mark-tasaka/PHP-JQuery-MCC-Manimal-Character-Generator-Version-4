@@ -10,6 +10,18 @@ The two most notable differences between Version 3 and Version 4 of the MCC Mani
 
 ---------------
 
+A live version of the Mutant Crawl Classics (MCC) Manimal Character Generator Version 4 is available at:
+
+https://www.oldschooladventures.org/mcc2/classes/manimal/
+
+-----------
+
+
+Update 1.01: 2022-12-22
+
+The completed iteration of the Manimal Character Generator Version 4 has been uploaded. As well, a link to the live version of the Manimal Character Generator Version 4 has been added to the Readme document.
+
+
 Initial commit: 2022-12-19
 
 The initial commit of the MCC Manimal Character Generator Version 4.
