@@ -1,6 +1,59 @@
 <?php
 
-function getMutantAppearance()
+function manimalAppearance()
+{
+    $appearance = array("Primate: gorilla",
+"Primate: chimpanzee",
+"Primate: orangutan",
+"Primate: gibbon",
+"Canine: dog",
+"Canine: wolf",
+"Canine: coyote",
+"Canine: fox",
+"Feline: lion",
+"Feline: tiger",
+"Feline: cheetah",
+"Feline: panther",
+"Ursine: brown bear",
+"Ursine: grizzly bear",
+"Ursine: polar bear",
+"Bovine: cow",
+"Bovine: bison",
+"Bovine: buffalo",
+"Bovine: antelope",
+"Bovine: yak",
+"Suidae: pig",
+"Suidae: hog",
+"Suidae: wartog",
+"Rodentia: mouse",
+"Rodentia: rat",
+"Rodentia: squirrel",
+"Rodentia: porcupine",
+"Rodentia: beaver",
+"Rodentia: rabbit",
+"Amphibia: frog",
+"Amphibia: toad",
+"Amphibia: salamander",
+"Avian: hawk",
+"Avian: eagle",
+"Avian: crow",
+"Avian: owl",
+"Avian: vulture",
+"Avian: seagull",
+"Insecta: roach",
+"Insecta: ant",
+"Insecta: fly",
+"Insecta: grasshopper",
+"Insecta: beetle",
+"Insecta: moth");
+
+        shuffle($appearance);
+
+        return $appearance[0];
+
+}
+
+function mutantAppearance()
 {
     $appearance = array(
         "Skin colour: bright red",
@@ -66,20 +119,27 @@ function getMutantAppearance()
 
         shuffle($appearance);
 
-        $dieRoll = rand(0, 30);
-
-        if($dieRoll > 28)
-        {
-            $physical = $appearance[0] . '<br/>' . $appearance[1];
-        }
-        else
-        {
-            $physical = $appearance[0];
-        }
-
-        return $physical;
+        return $appearance[0];
 }
 
+
+function getManimalAppearance()
+{
+    $dieRoll = rand(0, 29);
+
+    if($dieRoll < 26)
+    {
+        $appearance = manimalAppearance();
+    }
+    else
+    {
+        $manimalAppearance = manimalAppearance();
+        $mutantAppearance = mutantAppearance();
+        $appearance = $manimalAppearance . '<br/>' . $mutantAppearance;
+    }
+
+    return $appearance;
+}
 
 
 ?>

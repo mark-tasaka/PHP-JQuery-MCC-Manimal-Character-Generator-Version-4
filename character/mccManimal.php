@@ -255,10 +255,10 @@
 
         if(isset($_POST['theRandomMutuations']) && $_POST['theRandomMutuations'] == 1) 
         {
-            $dieRollPhysicalMutations = rand(1, 3);
+            $dieRollPhysicalMutations = rand(1, 2);
             $physicalMutationTotal = $dieRollPhysicalMutations;
 
-            $dieRollMentalMutations = rand(1, 2);
+            $dieRollMentalMutations = 1;
             $mentalMutationTotal = $dieRollMentalMutations;
 
             $defectMutationTotal = 0;
@@ -734,14 +734,14 @@
 
     $attackBonus = getAttackBonus($level);
 
-    
+    /*
     $mutantHorrorBonus = getMutantHorrorBonus($level);
 
     $mutantHorrorPart1 = getMutantHorrorPart1($level);
     $mutantHorrorPart2 = getMutantHorrorPart2($level);
     
-
-    $zeroLvMutantAppearance = getMutantAppearance();
+*/
+    $zeroLvManimalAppearance = getManimalAppearance();
 
 
     
@@ -1071,13 +1071,14 @@
            ?>
        </span>
 
-       
-       <span id="mutantHorrorBonus">
-           <?php
-                echo $mutantHorrorBonus;
-           ?>
+       <span id="zeroLvManimalAppearance">
+            <?php
+            echo $zeroLvManimalAppearance;
+            ?>
         </span>
-        
+
+       
+
 
         <span id="characterPhysicalMutations">
         <?php
@@ -1140,14 +1141,6 @@
            ?>  
         </span>
 
-       
-
-
-        <span id="zeroLvMutantAppearance">
-            <?php
-           echo $zeroLvMutantAppearance;
-           ?>
-       </span>
        
 	</section>
 	

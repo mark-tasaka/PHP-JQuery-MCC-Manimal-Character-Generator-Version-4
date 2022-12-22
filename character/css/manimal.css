@@ -370,14 +370,24 @@ body{
 
 #initiative{
     position:absolute;
-    top: 500px;
-    left: 830px;
-    font-size: 1.3em;
+    top: 395px;
+    left: 710px;
+    font-size: 1.1em;
+    color: white;
 }
+
+#zeroLvManimalAppearance{
+    position:absolute;
+    top: 870px;
+    left: 690px;
+    font-size: 0.8em;
+    width: 250px;
+}
+
 
 #artifactCheck{
     position:absolute;
-    top: 500px;
+    top: 505px;
     left: 660px;
     font-size: 1.3em;
 }

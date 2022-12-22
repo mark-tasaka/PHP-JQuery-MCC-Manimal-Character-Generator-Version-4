@@ -1,5 +1,5 @@
 <?php
-/*Mutant*/
+/*Manimal*/
 
 function savingThrowReflex($level)
 {
@@ -113,6 +113,7 @@ function getAttackBonus($level)
 
 
 
+
 function criticalDie($level)
 {
     $critical = "";
@@ -153,32 +154,33 @@ function criticalDie($level)
 }
 
 
+
 function title($level)
 {
 
         if($level == 1)
         {
-            $title = "Misfit";
+            $title = "Omega Club";
         }
         else if($level == 2)
         {
-            $title = "Deviant";
+            $title = "Theta Soldier";
         }
         else if($level == 3)
         {
-            $title = "Abomination";
+            $title = "Gamma Trooper";
         }
         else if($level == 4)
         {
-            $title = "Unhuman";
+            $title = "Beta Commander";
         }
         else if($level == 5)
         {
-            $title = "Mutant";
+            $title = "Alpha Leader";
         }
         else
         {
-            $title = "Meta-Human";
+            $title = "Alpha Pack Leader";
         }
 
 return $title;
@@ -197,39 +199,39 @@ function getArtifactCheckBonus($level)
           break;
           
         case 2:
-            $bonus = 1;
+            $bonus = 0;
           break;
           
         case 3:
-            $bonus = 2;
+            $bonus = 1;
           break;
 
         case 4:
-            $bonus = 3;
+            $bonus = 1;
           break;
           
         case 5:
-            $bonus = 4;
+            $bonus = 2;
           break;
           
         case 6:
-            $bonus = 5;
+            $bonus = 3;
           break;
 
           case 7:
-            $bonus = 6;
+            $bonus = 4;
           break;
           
         case 8:
-            $bonus = 7;
+            $bonus = 5;
           break;
           
         case 9:
-            $bonus = 8;
+            $bonus = 6;
           break;
           
         case 10:
-            $bonus = 9;
+            $bonus = 7;
           break;
           
         default:
@@ -238,6 +240,7 @@ function getArtifactCheckBonus($level)
 
     return $bonus;
 }
+
 
 
 function actionDiceCode($level)
@@ -352,98 +355,6 @@ function convertActionDice($input)
 
 }
 
-
-function getMutantHorrorPart1($level)
-{
-
-  if($level >= 1 && $level <=3)
-  {
-    $part1 = '1d3';
-  }
-  else if($level >= 4 && $level <=5)
-  {
-    $part1 = '1d4';
-  }
-  else if($level >= 6 && $level <=7)
-  {
-    $part1 = '1d5';
-  }
-  else if($level >= 8 && $level <=9)
-  {
-    $part1 = '1d6';
-  }
-  else
-  {
-    $part1 = '1d7';
-  }
-
-  return $part1;
-
-}
-
-
-function getMutantHorrorPart2($level)
-{
-
-  if($level == 2)
-  {
-    $part2 = 1;
-  }
-  else if($level == 3 || $level == 4)
-  {
-    $part2 = 2;
-  }
-  else if($level == 5)
-  {
-    $part2 = 3;
-  }
-  else if($level == 6)
-  {
-    $part2 = 4;
-  }
-  else if($level == 7 || $level == 8)
-  {
-    $part2 = 5;
-  }
-  else if($level == 9)
-  {
-    $part2 = 6;
-  }
-  else if($level == 10)
-  {
-    $part2 = 7;
-  }
-  else
-  {
-    $part2 = 0;
-  }
-
-  return $part2;
-  
-}
-
-function getMutantHorrorBonus($level)
-{
-
-  if($level > 1)
-  {
-    $part1 = getMutantHorrorPart1($level);
-    $part2 = getMutantHorrorPart2($level);
-
-    $horrorBonus = $part1 . '+' . $part2;
-
-    return $horrorBonus;
-  }
-  else
-  {
-    $part1 = getMutantHorrorPart1($level);
-
-    $horrorBonus = $part1;
-
-    return $horrorBonus;
-  }
-
-}
 
 
 ?>
