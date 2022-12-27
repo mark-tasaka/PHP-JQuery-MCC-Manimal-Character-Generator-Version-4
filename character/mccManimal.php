@@ -806,7 +806,7 @@
         <span id="maxTech"></span>
 
        
-       <span id="class">Mutant</span>
+       <span id="class">Manimal</span>
        
        <span id="armourClass"></span>
 
