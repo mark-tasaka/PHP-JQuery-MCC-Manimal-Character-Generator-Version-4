@@ -16,6 +16,10 @@ https://www.oldschooladventures.org/mcc2/classes/manimal/
 
 -----------
 
+Update 1.02: 2022-12-26
+
+Corrected minor error in code (mccManimal.php).
+
 
 Update 1.01: 2022-12-22
 
